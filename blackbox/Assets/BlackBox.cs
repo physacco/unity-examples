@@ -84,9 +84,9 @@ public class BlackBox : MonoBehaviour {
             new Vector2(0.5f, 0.25f),
 
             // back
-			new Vector2(1.0f, 0.25f),
+            new Vector2(1.0f, 0.25f),
             new Vector2(0.75f, 0.25f),
-			new Vector2(0.75f, 0.5f),
+            new Vector2(0.75f, 0.5f),
             new Vector2(1.0f, 0.5f),
 
             // left
@@ -108,9 +108,9 @@ public class BlackBox : MonoBehaviour {
             new Vector2(0.25f, 0.25f),
 
             // down
-			new Vector2(0.5f, 0.5f),
-			new Vector2(0.75f, 0.5f),
-			new Vector2(0.75f, 0.25f),
+            new Vector2(0.5f, 0.5f),
+            new Vector2(0.75f, 0.5f),
+            new Vector2(0.75f, 0.25f),
             new Vector2(0.5f, 0.25f),
         };
 
@@ -124,7 +124,7 @@ public class BlackBox : MonoBehaviour {
 
         MeshRenderer renderer = gameObject.AddComponent<MeshRenderer>();
         renderer.material = new Material(Shader.Find("Unlit/Texture"));
-		Texture2D texture = Resources.Load("cube_uv") as Texture2D;
-		renderer.material.mainTexture = texture;
+        Texture2D texture = Resources.Load("cube_uv") as Texture2D;
+        renderer.material.mainTexture = texture;
     }
 }
